@@ -1,0 +1,54 @@
+.contactus-wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.contactus-info {
+  flex: 1;
+  height: 80vh;
+  border: 3px dashed black;
+  padding: 20px;
+  margin-right: 100px;
+}
+
+.contactus-map {
+  flex: 1;
+  border: 3px dashed black;
+}
+
+.contactus-map img {
+  height: 80vh;
+}
+
+.contactus-info .store-locator-btn {
+  border: none;
+  width: 30%;
+  padding: 14px;
+  border-radius: 5px;
+  background-color: #ef6c00;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .contactus-wrapper {
+    display: block;
+  }
+
+  .contactus-info {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contactus-info .store-locator-btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contactus-map img {
+    height: 50vh;
+    width: 100%;
+  }
+}

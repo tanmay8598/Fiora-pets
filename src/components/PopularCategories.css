@@ -1,0 +1,55 @@
+.slider1 {
+  display: flex;
+  flex-direction: row;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 180px;
+}
+
+.slider-container {
+  /* background-color: red; */
+  position: relative;
+}
+
+.slider-container button {
+  border: 0;
+  font-size: 10px;
+  margin: 0 8px;
+  padding: 20px 10px;
+  vertical-align: middle;
+  align-self: center;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.slider-container button i {
+  background: transparent;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  opacity: 0.8;
+}
+
+.slider1 button {
+  border: 0;
+  font-size: 10px;
+  margin: 0 8px;
+  padding: 20px 10px;
+  vertical-align: middle;
+  align-self: center;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.slider1 button i {
+  background: transparent;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  opacity: 0.8;
+}

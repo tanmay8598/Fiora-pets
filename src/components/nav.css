@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.desktop-nav {
+  display: flex;
+  position: relative;
+}
+
+.desktop-menu-btn {
+  font-size: 25px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.desktop-menu-btn:hover {
+  cursor: pointer;
+}
+
+.desktop-wrapper {
+  margin-top: 50px;
+  /* margin-left: 500px; */
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  width: 20%;
+  flex-direction: column;
+  padding: 10px 20px;
+  animation: fadein 0.5s;
+  overflow-y: auto;
+  /* margin-left: 112px; */
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+.desktop-wrapper-right {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  width: 50%;
+  left: 20%;
+  flex-direction: column;
+  padding: 10px 20px;
+  animation: fadein 0.5s;
+  overflow-y: auto;
+  /* margin-left: 282px; */
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+.dekstop-wrapper-right-content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.dekstop-wrapper-right-content::-webkit-scrollbar {
+  width: 10px;
+}
+.dekstop-wrapper-right-content::-webkit-scrollbar-track {
+  background: #242526;
+}
+.dekstop-wrapper-right-content::-webkit-scrollbar-thumb {
+  background: #3a3b3c;
+}
+
+.sub-item {
+  width: 45%;
+  margin-bottom: 15px;
+}
+
+.sub-item p {
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.sub-item p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.special-item p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 8px;
+}
+
+.desktop-wrapper-animate {
+  margin-top: 50px;
+  display: flex;
+  height: 100vh;
+  background-color: #fff;
+  width: 20%;
+  flex-direction: column;
+  padding: 10px 20px;
+  animation: leftright 0.5s;
+  overflow-y: auto;
+  /* margin-left: 112px; */
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+@keyframes leftright {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 500ms ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 500ms ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.desktop-wrapper-item {
+  border-top: 0.8px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  animation: fadein 0.5s;
+}
+
+.desktop-wrapper-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    position: relative;
+  }
+  .menu-btn {
+    font-size: 25px;
+    position: absolute;
+    top: -44px;
+    left: 12px;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 20px;
+    animation: fadein 0.5s;
+    overflow-y: auto;
+  }
+
+  .animate-mobile {
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 20px;
+    animation: leftright 0.5s;
+    overflow-y: auto;
+  }
+
+  @keyframes leftright {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+      transition: all 500ms ease-in-out;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+      transition: all 500ms ease-in-out;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  /* custom scroll bar */
+  .mobile-wrapper::-webkit-scrollbar {
+    width: 10px;
+  }
+  .mobile-wrapper::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  .mobile-wrapper::-webkit-scrollbar-thumb {
+    background: #3a3b3c;
+  }
+
+  .wrapper-item {
+    border-top: 0.8px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    animation: fadein 0.5s;
+  }
+
+  .wrapper-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,27 @@
+.aboutus-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 140px;
+}
+
+.aboutus-content p {
+  text-align: justify;
+}
+
+.aboutus-content img {
+  height: 300px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutus-content {
+    display: block;
+  }
+
+  .aboutus-content img {
+    height: 250px;
+    margin-top: 15px;
+  }
+}

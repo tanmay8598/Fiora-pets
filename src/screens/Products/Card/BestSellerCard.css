@@ -1,0 +1,163 @@
+
+
+  .deal-container{
+    height: 32px;
+    background-color: #ffe600;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top:0;
+    left: 0;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .banner > h1 {
+    margin: 5vmax;
+  
+    font: 600 2.5vmax ;
+  }
+  
+  .banner > p {
+    font: 300 1.4vmax "Lucida Sans";
+  }
+  
+  .banner > a > button {
+    margin-bottom: 5vmax;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 1vmax;
+    transition: all 0.5s;
+    width: 9vmax;
+    font: 500 1vmax ;
+  }
+  .banner > a > button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }
+  
+  .banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+    max-width: 100%;
+  }
+  
+  .homeHeading {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+  }
+  
+
+  
+  .productCard1 {
+    min-width: 12vmax;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 1vmax;
+    transition: all 0.5s;
+    padding:0 0.5vmax;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    border-radius: 10px;
+    
+  }
+  
+  .productCard1 > img {
+    height: 130px;
+    width: 150px;
+    object-fit: contain;
+  }
+  
+  .productCard1 > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .productCard1Span {
+    margin: 0.5vmax;
+    font: 300 0.7vmax ;
+  }
+
+  .mrp{
+    color: grey;
+    
+  }
+  
+  .productCard1 > p {
+    
+    font-size: 0.9vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .productCard1 > span {
+    margin: 0.2vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 0.5vmax;
+  }
+  
+  .productCard1:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    border-radius: 10px;
+    transform: translateY(-1vmax);
+  }
+  
+  @media screen and (max-width: 600px) {
+
+    .productCard1{  
+      min-width: 38vmax;
+      height: 250px;
+      margin:40px 10px;  
+      
+    }
+
+    .productCard1:hover {
+      box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+      border-radius: 10px;
+      transform: translateY(-1vmax);
+    }
+
+    .productCard1 > p {
+      font-size: 1.9vmax;
+      width: 30ch;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  
+    .productCard1 > img {
+     width: 80%;
+    }
+  
+    .productCard1 > span {
+      font-size: 1.5vmax;
+    }
+  
+    .productCard1 > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax ;
+    }
+  }

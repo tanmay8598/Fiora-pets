@@ -1,0 +1,23 @@
+
+
+/* .video-bg{
+    object-fit: cover;
+}
+
+.videoTag{
+width: 100%;
+height: 100%;
+} */
+
+@media screen and (max-width: 500px) {
+
+    .video-bg{
+        object-fit: cover;
+    }
+
+.videoTag{
+    width: 100%;
+  height: 100%;
+}
+
+}
